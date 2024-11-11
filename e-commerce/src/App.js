@@ -23,16 +23,16 @@ function App() {
   useEffect(()=>{
     const fetchItems = async() =>{
       try{
-        const response = await fetch('http://localhost:3500/api/tshirts')
+        const response = await fetch('https://full-stack-ecommerce-mini.onrender.com/api/tshirts')
         const result = await response.json()
         setShirts(result)
-        const responseTwo = await fetch('http://localhost:3500/api/jeans')
+        const responseTwo = await fetch('https://full-stack-ecommerce-mini.onrender.com/api/jeans')
         const resultTwo = await responseTwo.json()
         setJeanpants(resultTwo)
-        const responseThree = await fetch('http://localhost:3500/api/electronics')
+        const responseThree = await fetch('https://full-stack-ecommerce-mini.onrender.com/api/electronics')
         const resultThree = await responseThree.json()
         setElectronics(resultThree)
-        const responseFour = await fetch('http://localhost:3500/api/carts')
+        const responseFour = await fetch('https://full-stack-ecommerce-mini.onrender.com/api/carts')
         const resultFour = await responseFour.json()
         setCartItems(resultFour)
       }catch(err){
@@ -54,69 +54,7 @@ function App() {
   const [Electronics,setElectronics] = useState([])
 
 
-// const handleCartJean = async(id) =>{
-//    const foundobj = jeanpants.find((item)=> item._id === id)
-//    const checkobj = carts.find((item)=> item._id === id)
-//    if(checkobj){
-//     alert('item aldready added to cart')
-//    }else{
-//     const newarr = [...carts,foundobj]
-//     setCart(newarr)
-//     console.log(carts)
-//     alert('Item added to cart !')
-    
-//    }
-// }
 
-// const handleCartShirt = async(id) => {
-//   const findobj = shirts.find((item) => item._id === id)
-//   console.log(findobj)
-//   const checkobj = carts.find((item)=> item._id === id)
-//   if(checkobj){
-//     alert('item aldready added to Cart')
-//   }
-//   else{
-//     const newarr = [...carts,findobj]
-//     setCart(newarr)
-//     alert('Item added to cart !')
-//   }
-// }
-// const handleCartTshirt = async(id) => {
-//   const findobj = tshirts.find((item) => item.id === id)
-//   const checkobj = carts.find((item)=> item.id === id)
-//   if(checkobj){
-//     alert('item aldready added to Cart')
-//   }
-//   else{
-//     const newarr = [...carts,findobj]
-//     setCart(newarr)
-//     alert('Item added to cart !')
-//     await api.post('/cartitems',findobj)
-//   }
-// }
-// const handleCartElectronics = async(id) => {
-//   const findobj = Electronics.find((item) => item.id === id)
-//   const checkobj = carts.find((item)=> item.id === id)
-//   if(checkobj){
-//     alert('item aldready added to Cart')
-//   }
-//   else{
-//     const newarr = [...carts,findobj]
-//     setCart(newarr)
-//     alert('Item added to cart !')
-//     await api.post('/cartitems',findobj)
-//   }
-// }
-// const handleDelete = async(id) => {
-//   try{
-//   const newArr = carts.filter((item)=> item.id !== id)
-//   setCart(newArr)
-//   await api.delete(`/cartitems/${id}`)
-//   }catch(err){
-//     console.log(err);
-    
-//   }
-// }
   return (
     
       <div className='main-container'>
