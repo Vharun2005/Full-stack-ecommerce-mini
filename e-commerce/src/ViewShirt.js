@@ -10,7 +10,7 @@ const ViewShirt = ({cartItems,setCartItems}) => {
     useEffect(()=>{
       const fetchItems = async() =>{
         try{
-          const responseTwo = await fetch('http://localhost:3500/api/tshirts/'+id)
+          const responseTwo = await fetch('https://full-stack-ecommerce-mini.onrender.com/api/tshirts/'+id)
           const resultTwo = await responseTwo.json()
           setobjItem(resultTwo)
           console.log(resultTwo)
@@ -44,7 +44,7 @@ const ViewShirt = ({cartItems,setCartItems}) => {
         const newArr = [...cartItems,cartObj]
         setCartItems(newArr)
         toast('Item added to the Cart')
-        const URL = "http://localhost:3500/api/carts/"
+        const URL = "https://full-stack-ecommerce-mini.onrender.com/api/carts/"
         const postOptions = {
           method:'POST',
           headers:{
@@ -88,7 +88,7 @@ const ViewShirt = ({cartItems,setCartItems}) => {
         }
          {!objitem &&
           <>
-            <p className='fw-medium text-center m-5 fs-3 '>Please Reload The Website !</p>
+            <p className='fw-medium text-center m-5 fs-3 '>Please wait... </p>
 
           </>
 
