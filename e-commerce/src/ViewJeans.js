@@ -10,7 +10,7 @@ const ViewJeans = ({cartItems,setCartItems}) => {
     useEffect(()=>{
       const fetchItems = async() =>{
         try{
-          const responseTwo = await fetch('http://localhost:3500/api/jeans/'+id)
+          const responseTwo = await fetch('https://full-stack-ecommerce-mini.onrender.com/api/jeans/'+id)
           const resultTwo = await responseTwo.json()
           setJeanitem(resultTwo)
         }catch(err){
@@ -48,7 +48,7 @@ const ViewJeans = ({cartItems,setCartItems}) => {
         setCartItems(newArr)
         toast('Item added to Cart')
         console.log(cartItems)
-        const URL = "http://localhost:3500/api/carts/"
+        const URL = "https://full-stack-ecommerce-mini.onrender.com//api/carts/"
         const postOptions = {
           method:'POST',
           headers:{
