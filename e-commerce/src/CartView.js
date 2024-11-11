@@ -12,7 +12,7 @@ const CartView = ({cartItems,setCartItems}) => {
     const updateArr = cartItems.map((item)=>( item._id === id ? {...item,qty:item.qty<10?item.qty+1:item.qty}:item))
     setCartItems(updateArr)
     const Postarr = updateArr.find((item) => item._id === id)
-    const URL = "http://localhost:3500/api/carts/"
+    const URL = "https://full-stack-ecommerce-mini.onrender.com/api/carts/"
         const postOptions = {
           method:'PATCH',
           headers:{
@@ -32,7 +32,7 @@ const CartView = ({cartItems,setCartItems}) => {
     const updateArr = cartItems.map((item)=>( item._id === id ? {...item,qty:item.qty>1?item.qty-1:item.qty}:item))
     setCartItems(updateArr)
     const Postarr = updateArr.find((item) => item._id === id)
-    const URL = "http://localhost:3500/api/carts/"
+    const URL = "https://full-stack-ecommerce-mini.onrender.com/api/carts/"
         const postOptions = {
           method:'PATCH',
           headers:{
@@ -53,7 +53,7 @@ const CartView = ({cartItems,setCartItems}) => {
       item._id !== id
     ))
     setCartItems(updateArr)
-    const URL = "http://localhost:3500/api/carts/"
+    const URL = "https://full-stack-ecommerce-mini.onrender.com//api/carts/"
         const postOptions = {
           method:'DELETE',
           headers:{
