@@ -39,7 +39,7 @@ const ViewShirt = ({cartItems,setCartItems}) => {
     }
     const AddtoCart = () => {
       const cartObj = {...objitem,qty}
-      const ifExists = cartItems.find((item) => item._id === cartObj._id)
+      const ifExists = cartItems.length ? cartItems.find((item) => item._id === cartObj._id) : null
       if(!ifExists){
         const newArr = [...cartItems,cartObj]
         setCartItems(newArr)
@@ -58,6 +58,8 @@ const ViewShirt = ({cartItems,setCartItems}) => {
         if(result){
           console.log(result)
         }
+      }else{
+        return toast('Item aldready added to cart')
       }
     }
   return (

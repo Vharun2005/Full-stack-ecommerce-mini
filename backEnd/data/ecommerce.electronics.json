@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "66f79fc711c82c47e25f465f"
+  },
+  "ProductName": "Mobile",
+  "price": 20000,
+  "prodDetails": "8gb Ram with 128gb Rom ,Dragon processor,EMI available",
+  "src": "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1717891200&semt=sph"
+},
+{
+  "_id": {
+    "$oid": "66f79fc711c82c47e25f4660"
+  },
+  "ProductName": "Fridge",
+  "price": 35000,
+  "prodDetails": "High fast cooling system with stabilizer,EMI available",
+  "src": "https://media.croma.com/image/upload/v1710847182/Croma%20Assets/Large%20Appliances/Refrigerator/Images/271369_20_a1rlhx.png"
+},
+{
+  "_id": {
+    "$oid": "66f79fc711c82c47e25f4661"
+  },
+  "ProductName": "Washing Machine",
+  "price": 25000,
+  "prodDetails": "For Full Details visit our branch,EMI available",
+  "src": "https://www.shutterstock.com/image-photo/white-washing-machine-on-isolated-260nw-2208129645.jpg"
+},
+{
+  "_id": {
+    "$oid": "66f79fc711c82c47e25f4662"
+  },
+  "ProductName": "Air Conditioner",
+  "price": 45000,
+  "prodDetails": "1.5 TON cooler system with free air Box ultra cooling system ,EMI available",
+  "src": "https://acontech.com.my/wp-content/uploads/2019/12/Ductless-Split-System-Air-Conditioners.jpg"
+},
+{
+  "_id": {
+    "$oid": "66f79fc711c82c47e25f4663"
+  },
+  "ProductName": "Air cooler",
+  "price": 9000,
+  "prodDetails": "crompton ozone 55 Air cooler with efficient motor,EMI available",
+  "src": "https://www.venushomeappliances.com/storage/app/category/20220113115137air-cooler.jpg"
+},
+{
+  "_id": {
+    "$oid": "66f79fc711c82c47e25f4664"
+  },
+  "ProductName": "Led TV",
+  "price": 15000,
+  "prodDetails": "Sony sounded tv subcription wiith netflix,amazon,EMI available",
+  "src": "https://www.shutterstock.com/image-photo/tv-flat-screen-lcd-plasma-260nw-314401364.jpg"
+},
+{
+  "_id": {
+    "$oid": "66f79fc711c82c47e25f4665"
+  },
+  "ProductName": "Printer",
+  "price": 8000,
+  "prodDetails": "For Full Details visit our branch,EMI available",
+  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZ8O7_RzbQf-o5BSUfPw8DbPiWMSM53ouTw&s"
+},
+{
+  "_id": {
+    "$oid": "66f79fc711c82c47e25f4666"
+  },
+  "ProductName": "Iron box",
+  "price": 4000,
+  "prodDetails": "For Full Details visit our branch,EMI available",
+  "src": "https://oxygendigitalshop.com/media/cache/2500x0/catalog/product/i/r/iron_box_havells_new_1655467547.webp"
+}]

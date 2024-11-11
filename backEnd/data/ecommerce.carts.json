@@ -1,0 +1,41 @@
+[{
+  "_id": "66f79fb611c82c47e25f4646",
+  "src": "https://i.pinimg.com/736x/8c/32/6f/8c326fa01843147a25f15a3b7b26b32e.jpg",
+  "price": 199,
+  "qty": 5,
+  "CreatedAt": {
+    "$date": "2024-11-04T10:44:11.662Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-04T10:44:11.662Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "66f79fc711c82c47e25f4661",
+  "src": "https://www.shutterstock.com/image-photo/white-washing-machine-on-isolated-260nw-2208129645.jpg",
+  "ProductName": "Washing Machine",
+  "price": 25000,
+  "prodDetails": "For Full Details visit our branch,EMI available",
+  "qty": 1,
+  "CreatedAt": {
+    "$date": "2024-11-11T02:47:45.491Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-11T02:47:45.491Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "66f79fa111c82c47e25f463e",
+  "src": "https://pngimg.com/uploads/dress_shirt/dress_shirt_PNG8113.png",
+  "price": 178,
+  "qty": 3,
+  "CreatedAt": {
+    "$date": "2024-11-11T02:47:45.491Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-11T02:47:45.491Z"
+  },
+  "__v": 0
+}]

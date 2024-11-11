@@ -24,10 +24,11 @@ const ViewElectronics = ({cartItems,setCartItems}) => {
     }
     const addTocart = async() =>{
       const newObj = {...objitem,qty}
+      console.log(objitem)
       const ifExists = cartItems.length ? cartItems.find((item) => item._id.toString() === id) :null
-      
+    
       if(ifExists){
-        return
+        return toast('item aldready added to cart')
       }else{
         const newArr = [...cartItems,newObj]
         setCartItems(newArr)
@@ -72,7 +73,7 @@ const ViewElectronics = ({cartItems,setCartItems}) => {
         {objitem &&
           <>
            <div className='text-center '>
-            <img src={objitem.src} alt='shirt-img' className='custom'></img>
+            <img src={objitem.src} alt='' className='custom'></img>
            </div>
            <div className='  ms-3 custopa'>
             <ToastContainer position='top-center'/>

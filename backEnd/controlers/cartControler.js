@@ -12,7 +12,6 @@ const getCarts = async(req,res,next) =>{
 }
 const postCarts = async(req,res,next) =>{
     const recievedObj = req.body
-    console.log(recievedObj)
     if(!recievedObj.price || !recievedObj.qty ){
         return res.status(500).send('post not recived')
     }
