@@ -4,10 +4,10 @@ const router = require('express').Router()
 
 
 router.route('/carts')
-    .get(getCarts)
-    .post(postCarts)
+    .post(getCarts)
     .patch(updateCarts)
     .delete(deleteCarts)
+router.route('/postcart').post(postCarts)
 
 
 module.exports = router    

@@ -7,6 +7,7 @@ const cors = require('cors')
 const tshirtRoutes = require('./routes/tshirtRoutes')
 const jeanRoutes = require('./routes/jeansRoutes')
 const ElectronicRoutes = require('./routes/electronicsRoutes')
+const Loginroutes = require('./routes/Loginroute')
 const cartsRoutes = require('./routes/cartsRoutes')
 const connectDatabase = require('./data/database')
 const bodyParser = require('body-parser')
@@ -18,6 +19,8 @@ app.use('/api',tshirtRoutes)
 app.use('/api',jeanRoutes)
 app.use('/api',ElectronicRoutes)
 app.use('/api',cartsRoutes)
+app.use('/api',Loginroutes)
+
 
 connectDatabase().catch((err)=>{
     console.log(err.message)
