@@ -74,7 +74,7 @@ function App() {
     if (name) {
       try {
         setcartloading(true);
-        const responseFour = await axios.post('http://localhost:3500/api/carts', { username: name });
+        const responseFour = await axios.post('https://full-stack-ecommerce-mini.onrender.com/api/carts', { username: name });
         const resultFour = await responseFour.data;
         setCartItems(resultFour);
       } catch (err) {
@@ -92,7 +92,7 @@ function App() {
 
   const getNamewithToken = async () => {
     try {
-      const getName = await axios.post('http://localhost:3500/api/validuser');
+      const getName = await axios.post('https://full-stack-ecommerce-mini.onrender.com/api/validuser');
       const name = await getName.data;
       setname(name);
     } catch (err) {

@@ -19,7 +19,7 @@ const Signsecondpage = ({toggleForm}) => {
       try{
       setLoading(true)
       const Obj = {username:name,password:password,email:email}
-      const response = await axios.post('http://localhost:3500/api/signup',Obj)
+      const response = await axios.post('https://full-stack-ecommerce-mini.onrender.com/api/signup',Obj)
       const responseData = await response.data
       alert(responseData)
       navigate('/login')
