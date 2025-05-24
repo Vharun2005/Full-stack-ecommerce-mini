@@ -1,5 +1,5 @@
 const LoginUserSchema = require("../model/LoginUserSchema")
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken')
 const secretkey = 'radhka06'
 
