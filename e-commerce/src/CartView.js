@@ -67,12 +67,13 @@ const CartView = ({ cartItems, setCartItems, cartloading, name, setAmount }) => 
 
   return (
     <div>
+      {cartItems.length ? (
       <section className='d-flex justify-content-evenly flex-direction-column'>
         <div className="con">
           <p className={cartloading ? 'loader' : ''}></p>
         </div>
 
-        {cartItems.length ? (
+        
           <>
             <div>
               <ToastContainer position='top-center' />
@@ -111,21 +112,15 @@ const CartView = ({ cartItems, setCartItems, cartloading, name, setAmount }) => 
               </div>
             </div>
           </>
-        ) : (
+      </section>) : (
           <>
             {!cartloading && (
-              <>
-                <p className='fw-medium text-center m-5 fs-3'>Cart is Empty!</p>
-                <div className='text-center mt-2'>
-                  <Link to='/'>
-                    <button type="button" className="btn btn-info fw-medium mb-2">Purchase Items</button>
-                  </Link>
-                </div>
-              </>
+              <div className='text-center'>
+                <p className='text-center fs-1'>Cart is Empty</p>
+              </div>
             )}
           </>
         )}
-      </section>
     </div>
   );
 };

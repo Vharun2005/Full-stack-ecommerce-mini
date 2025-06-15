@@ -10,6 +10,7 @@ import { CgProfile } from "react-icons/cg";
 
 const AppBar = () => {
   const { user } = useContext(BackendContext);
+  
 
   return (
     <Navbar expand="lg" className="bg-body-secondary" id='nav'>

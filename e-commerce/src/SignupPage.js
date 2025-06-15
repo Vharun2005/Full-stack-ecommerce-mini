@@ -23,7 +23,7 @@ const SignupPage = () => {
     try {
       setLoading(true)
       const obj = { username: name, password, email }
-      const response = await axios.post('http://localhost:3500/api/login', obj)
+      const response = await axios.post('https://full-stack-ecommerce-mini.onrender.com/api/login', obj)
       const responseData = response.data
 
       dispatch({
@@ -35,9 +35,9 @@ const SignupPage = () => {
       setEmail('')
       setPassword('')
       navigate('/')
-    } catch (error) {
-      if (error.response) {
-        alert(error.response.data)
+    } catch (err) {
+      if (err) {
+        alert(err.response ? err.response.data || err.response : err.message || "An error occurred");
       } else {
         alert('An error occurred, please reload the website.')
       }
@@ -73,7 +73,7 @@ const SignupPage = () => {
           </div>
           <div className='d-flex flex-column ms-2 mt-2'>
             <label className='center'>Password</label>
-            <div style={{ backgroundColor: 'white' }} className='cus-pass-width'>
+            <div className='cus-pass-width'>
               <input
                 type={showPass ? 'text' : 'password'}
                 className='cus-pass-input'
@@ -84,9 +84,9 @@ const SignupPage = () => {
               />
               <span>
                 {showPass ? (
-                  <FaRegEye className='cursor' style={{ color: 'black' }} onClick={() => setShowPass(!showPass)} />
+                  <FaRegEye className='cursor ms-2' style={{ color: 'white' }} onClick={() => setShowPass(!showPass)} />
                 ) : (
-                  <FaEyeSlash className='cursor' style={{ color: 'black' }} onClick={() => setShowPass(!showPass)} />
+                  <FaEyeSlash className='cursor ms-2' style={{ color: 'white' }} onClick={() => setShowPass(!showPass)} />
                 )}
               </span>
             </div>

@@ -20,7 +20,7 @@
 }
 
 .cus-pass-input {
-    margin-left: auto;
+    margin-left: 46px;
     margin-right: auto;
     width: 300px;
     height: 50px;
@@ -74,6 +74,7 @@
     .cus-pass-input {
         width: 200px;
         height: 40px;
+        margin-left: 35px;
     }
     .center {
         margin-left: 47px;
@@ -91,6 +92,27 @@
     .cus-name-input {
         width: 200px;
         height: 40px;
+    }
+    .cus-pass-input {
+        width: 200px;
+        height: 40px;
+    }
+    .center {
+        margin-left: 47px;
+    }
+    .signup-btn {
+        width: 150px;
+        height: 35px;
+    }
+    .cus-h-w {
+        width: 280px;
+    }
+}
+@media (max-width: 320px) {
+    .cus-name-input {
+        width: 200px;
+        height: 40px;
+        
     }
     .cus-pass-input {
         width: 200px;

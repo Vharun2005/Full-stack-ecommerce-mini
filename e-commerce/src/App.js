@@ -157,7 +157,7 @@ function App() {
           <Route path='/cart' element={<CartView cartItems={cartItems} name={name} setCartItems={setCartItems} cartloading={cartloading} setAmount={setAmount} />} />
           <Route path='/login' element={<SignupPage />} />
           <Route path='/signup' element={<Signsecondpage />} />
-          <Route path='/profile' element={<Profile name={name} />} />
+          <Route path='/profile' element={name ? <Profile name={name} /> : <SignupPage/>} />
           <Route path='/orderpage' element={<OrderPage amount={amount} setAmount={setAmount} />} />
         </Routes>
       </main>
